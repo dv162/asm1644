@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body class="bodylogin">
+    <h1 class="logins" style="margin-top: 120px"><%= title %></h1>
+    <form action="login" method="post" class="formlogin">
+      <div class="containers">
+        <div>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            id=""
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            id=""
+            required
+          />
+        </div>
+        <button type="submit" class="buttonlogin">Login</button>
+      </div>
+    </form>
+    <p><%= message %></p>
+  </body>
+</html>
